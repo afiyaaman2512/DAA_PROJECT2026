@@ -6,10 +6,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(include)
 
+# libcurl
 find_package(CURL REQUIRED)
+
+# Gumbo
+find_library(GUMBO_LIB gumbo REQUIRED)
+find_path(GUMBO_INCLUDE gumbo.h)
+include_directories(${GUMBO_INCLUDE})
 
 file(GLOB SOURCES "src/*.cpp")
 
 add_executable(linkshield ${SOURCES})
 
-target_link_libraries(linkshield CURL::libcurl)
+target_link_libraries(linkshield CURL::libcurl ${GUMBO_LIB})

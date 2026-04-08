@@ -246,6 +246,12 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 CURL_LIBRARY_RELEASE:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 
+//Path to a file.
+GUMBO_INCLUDE:PATH=/opt/homebrew/include
+
+//Path to a library.
+GUMBO_LIB:FILEPATH=/opt/homebrew/lib/libgumbo.dylib
+
 //Value Computed by CMake
 LinkShield_BINARY_DIR:STATIC=/Users/afiyaaman/DAA_PROJECT2026/build
 

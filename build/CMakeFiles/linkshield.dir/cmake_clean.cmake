@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/linkshield.dir/src/checker.cpp.o.d"
   "CMakeFiles/linkshield.dir/src/main.cpp.o"
   "CMakeFiles/linkshield.dir/src/main.cpp.o.d"
+  "CMakeFiles/linkshield.dir/src/parser.cpp.o"
+  "CMakeFiles/linkshield.dir/src/parser.cpp.o.d"
   "linkshield"
   "linkshield.pdb"
 )

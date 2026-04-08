@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/afiyaaman/DAA_PROJECT2026/include
+CXX_INCLUDES = -I/Users/afiyaaman/DAA_PROJECT2026/include -I/opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 
