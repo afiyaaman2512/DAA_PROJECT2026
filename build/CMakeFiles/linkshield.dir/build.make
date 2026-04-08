@@ -86,10 +86,24 @@ CMakeFiles/linkshield.dir/src/checker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linkshield.dir/src/checker.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/afiyaaman/DAA_PROJECT2026/src/checker.cpp -o CMakeFiles/linkshield.dir/src/checker.cpp.s
 
+CMakeFiles/linkshield.dir/src/crawler.cpp.o: CMakeFiles/linkshield.dir/flags.make
+CMakeFiles/linkshield.dir/src/crawler.cpp.o: /Users/afiyaaman/DAA_PROJECT2026/src/crawler.cpp
+CMakeFiles/linkshield.dir/src/crawler.cpp.o: CMakeFiles/linkshield.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linkshield.dir/src/crawler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linkshield.dir/src/crawler.cpp.o -MF CMakeFiles/linkshield.dir/src/crawler.cpp.o.d -o CMakeFiles/linkshield.dir/src/crawler.cpp.o -c /Users/afiyaaman/DAA_PROJECT2026/src/crawler.cpp
+
+CMakeFiles/linkshield.dir/src/crawler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linkshield.dir/src/crawler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/afiyaaman/DAA_PROJECT2026/src/crawler.cpp > CMakeFiles/linkshield.dir/src/crawler.cpp.i
+
+CMakeFiles/linkshield.dir/src/crawler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linkshield.dir/src/crawler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/afiyaaman/DAA_PROJECT2026/src/crawler.cpp -o CMakeFiles/linkshield.dir/src/crawler.cpp.s
+
 CMakeFiles/linkshield.dir/src/main.cpp.o: CMakeFiles/linkshield.dir/flags.make
 CMakeFiles/linkshield.dir/src/main.cpp.o: /Users/afiyaaman/DAA_PROJECT2026/src/main.cpp
 CMakeFiles/linkshield.dir/src/main.cpp.o: CMakeFiles/linkshield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/linkshield.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/linkshield.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linkshield.dir/src/main.cpp.o -MF CMakeFiles/linkshield.dir/src/main.cpp.o.d -o CMakeFiles/linkshield.dir/src/main.cpp.o -c /Users/afiyaaman/DAA_PROJECT2026/src/main.cpp
 
 CMakeFiles/linkshield.dir/src/main.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/linkshield.dir/src/main.cpp.s: cmake_force
 CMakeFiles/linkshield.dir/src/parser.cpp.o: CMakeFiles/linkshield.dir/flags.make
 CMakeFiles/linkshield.dir/src/parser.cpp.o: /Users/afiyaaman/DAA_PROJECT2026/src/parser.cpp
 CMakeFiles/linkshield.dir/src/parser.cpp.o: CMakeFiles/linkshield.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/linkshield.dir/src/parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/linkshield.dir/src/parser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linkshield.dir/src/parser.cpp.o -MF CMakeFiles/linkshield.dir/src/parser.cpp.o.d -o CMakeFiles/linkshield.dir/src/parser.cpp.o -c /Users/afiyaaman/DAA_PROJECT2026/src/parser.cpp
 
 CMakeFiles/linkshield.dir/src/parser.cpp.i: cmake_force
@@ -114,23 +128,41 @@ CMakeFiles/linkshield.dir/src/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linkshield.dir/src/parser.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/afiyaaman/DAA_PROJECT2026/src/parser.cpp -o CMakeFiles/linkshield.dir/src/parser.cpp.s
 
+CMakeFiles/linkshield.dir/src/smart.cpp.o: CMakeFiles/linkshield.dir/flags.make
+CMakeFiles/linkshield.dir/src/smart.cpp.o: /Users/afiyaaman/DAA_PROJECT2026/src/smart.cpp
+CMakeFiles/linkshield.dir/src/smart.cpp.o: CMakeFiles/linkshield.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/linkshield.dir/src/smart.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/linkshield.dir/src/smart.cpp.o -MF CMakeFiles/linkshield.dir/src/smart.cpp.o.d -o CMakeFiles/linkshield.dir/src/smart.cpp.o -c /Users/afiyaaman/DAA_PROJECT2026/src/smart.cpp
+
+CMakeFiles/linkshield.dir/src/smart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/linkshield.dir/src/smart.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/afiyaaman/DAA_PROJECT2026/src/smart.cpp > CMakeFiles/linkshield.dir/src/smart.cpp.i
+
+CMakeFiles/linkshield.dir/src/smart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/linkshield.dir/src/smart.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/afiyaaman/DAA_PROJECT2026/src/smart.cpp -o CMakeFiles/linkshield.dir/src/smart.cpp.s
+
 # Object files for target linkshield
 linkshield_OBJECTS = \
 "CMakeFiles/linkshield.dir/src/checker.cpp.o" \
+"CMakeFiles/linkshield.dir/src/crawler.cpp.o" \
 "CMakeFiles/linkshield.dir/src/main.cpp.o" \
-"CMakeFiles/linkshield.dir/src/parser.cpp.o"
+"CMakeFiles/linkshield.dir/src/parser.cpp.o" \
+"CMakeFiles/linkshield.dir/src/smart.cpp.o"
 
 # External object files for target linkshield
 linkshield_EXTERNAL_OBJECTS =
 
 linkshield: CMakeFiles/linkshield.dir/src/checker.cpp.o
+linkshield: CMakeFiles/linkshield.dir/src/crawler.cpp.o
 linkshield: CMakeFiles/linkshield.dir/src/main.cpp.o
 linkshield: CMakeFiles/linkshield.dir/src/parser.cpp.o
+linkshield: CMakeFiles/linkshield.dir/src/smart.cpp.o
 linkshield: CMakeFiles/linkshield.dir/build.make
 linkshield: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 linkshield: /opt/homebrew/lib/libgumbo.dylib
 linkshield: CMakeFiles/linkshield.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable linkshield"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable linkshield"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/linkshield.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

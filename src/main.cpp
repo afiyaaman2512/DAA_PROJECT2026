@@ -1,48 +1,54 @@
 #include <iostream>
-#include <string>
-#include "checker.h"
-#include "parser.h"
-#include <curl/curl.h>
-
-// Callback function so curl can collect HTML into a string
-static size_t writeCallback(void* contents, size_t size, 
-                             size_t nmemb, std::string* output) {
-    output->append((char*)contents, size * nmemb);
-    return size * nmemb;
-}
-
-// Fetches full HTML of a page (GET request)
-std::string fetchHTML(const std::string& url) {
-    CURL* curl = curl_easy_init();
-    std::string html;
-
-    if (curl) {
-        curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
-        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writeCallback);
-        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &html);
-        curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 10L);
-        curl_easy_perform(curl);
-        curl_easy_cleanup(curl);
-    }
-    return html;
-}
+#include "crawler.h"
+#include "smart.h"
 
 int main() {
-    std::cout << "LinkShield starting..." << std::endl;
+    std::cout << "LinkShield Phase 5 - Smart Fix & Malicious Detection\n\n";
 
-    std::string testURL = "https://example.com";
-    
-    std::cout << "\nFetching: " << testURL << std::endl;
-    std::string html = fetchHTML(testURL);
-    
-    std::cout << "Extracting links..." << std::endl;
-    std::vector<std::string> links = extractLinks(html, testURL);
+    // ── Test 1: Levenshtein suggestions ──────────────────────────────
+    std::cout << "=== Typo Suggestions ===\n";
+    std::vector<std::string> knownURLs = {
+        "https://example.com/about",
+        "https://example.com/contact",
+        "https://example.com/login",
+        "https://example.com/checkout"
+    };
 
-    std::cout << "Found " << links.size() << " links:" << std::endl;
-    for (const auto& link : links) {
-        int code = checkURL(link);
-        std::cout << "[" << code << "] " << link << std::endl;
+    std::string broken = "https://example.com/abuot";  // typo: about
+    std::string suggestion = suggestFix(broken, knownURLs);
+    std::cout << "Broken:     " << broken << "\n";
+    std::cout << "Suggested:  " << (suggestion.empty() ? "no match" : suggestion) << "\n\n";
+
+    // ── Test 2: Blacklist detection ───────────────────────────────────
+    std::cout << "=== Malicious Domain Check ===\n";
+    std::vector<std::string> testURLs = {
+        "https://google.com/search",
+        "https://malware.com/download",
+        "https://example.com/page",
+        "https://phishing-site.net/login"
+    };
+
+    for (const auto& url : testURLs) {
+        bool toxic = isMalicious(url);
+        std::cout << (toxic ? "[TOXIC]  " : "[CLEAN]  ") << url << "\n";
+    }
+
+    // ── Test 3: Priority queue ────────────────────────────────────────
+    std::cout << "\n=== Priority Queue (scan order) ===\n";
+    std::vector<std::string> pagesToScan = {
+        "https://example.com/about",
+        "https://example.com/login",
+        "https://example.com/blog",
+        "https://example.com/checkout",
+        "https://example.com/contact",
+        "https://example.com/admin"
+    };
+
+    auto pq = buildPriorityQueue(pagesToScan);
+    while (!pq.empty()) {
+        auto task = pq.top(); pq.pop();
+        std::cout << "[Priority " << task.priority << "] " 
+                  << task.url << "\n";
     }
 
     return 0;

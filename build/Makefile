@@ -153,6 +153,30 @@ src/checker.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/checker.cpp.s
 .PHONY : src/checker.cpp.s
 
+src/crawler.o: src/crawler.cpp.o
+.PHONY : src/crawler.o
+
+# target to build an object file
+src/crawler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/crawler.cpp.o
+.PHONY : src/crawler.cpp.o
+
+src/crawler.i: src/crawler.cpp.i
+.PHONY : src/crawler.i
+
+# target to preprocess a source file
+src/crawler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/crawler.cpp.i
+.PHONY : src/crawler.cpp.i
+
+src/crawler.s: src/crawler.cpp.s
+.PHONY : src/crawler.s
+
+# target to generate assembly for a file
+src/crawler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/crawler.cpp.s
+.PHONY : src/crawler.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -201,6 +225,30 @@ src/parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/parser.cpp.s
 .PHONY : src/parser.cpp.s
 
+src/smart.o: src/smart.cpp.o
+.PHONY : src/smart.o
+
+# target to build an object file
+src/smart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/smart.cpp.o
+.PHONY : src/smart.cpp.o
+
+src/smart.i: src/smart.cpp.i
+.PHONY : src/smart.i
+
+# target to preprocess a source file
+src/smart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/smart.cpp.i
+.PHONY : src/smart.cpp.i
+
+src/smart.s: src/smart.cpp.s
+.PHONY : src/smart.s
+
+# target to generate assembly for a file
+src/smart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/smart.cpp.s
+.PHONY : src/smart.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +261,18 @@ help:
 	@echo "... src/checker.o"
 	@echo "... src/checker.i"
 	@echo "... src/checker.s"
+	@echo "... src/crawler.o"
+	@echo "... src/crawler.i"
+	@echo "... src/crawler.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/parser.o"
 	@echo "... src/parser.i"
 	@echo "... src/parser.s"
+	@echo "... src/smart.o"
+	@echo "... src/smart.i"
+	@echo "... src/smart.s"
 .PHONY : help
 
 
