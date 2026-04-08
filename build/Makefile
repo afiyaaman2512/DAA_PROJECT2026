@@ -129,6 +129,30 @@ linkshield/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/build
 .PHONY : linkshield/fast
 
+src/checker.o: src/checker.cpp.o
+.PHONY : src/checker.o
+
+# target to build an object file
+src/checker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/checker.cpp.o
+.PHONY : src/checker.cpp.o
+
+src/checker.i: src/checker.cpp.i
+.PHONY : src/checker.i
+
+# target to preprocess a source file
+src/checker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/checker.cpp.i
+.PHONY : src/checker.cpp.i
+
+src/checker.s: src/checker.cpp.s
+.PHONY : src/checker.s
+
+# target to generate assembly for a file
+src/checker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkshield.dir/build.make CMakeFiles/linkshield.dir/src/checker.cpp.s
+.PHONY : src/checker.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... linkshield"
+	@echo "... src/checker.o"
+	@echo "... src/checker.i"
+	@echo "... src/checker.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
