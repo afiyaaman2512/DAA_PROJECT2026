@@ -1,0 +1,3 @@
+/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles/linkshield.dir
+/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles/edit_cache.dir
+/Users/afiyaaman/DAA_PROJECT2026/build/CMakeFiles/rebuild_cache.dir
